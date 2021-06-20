@@ -9,29 +9,29 @@ import (
 
 func createView() {
 	// Creating window
-	view1 := ui.AddWindow(0, 0, 30, 21, "On Pannel")
-	view2 := ui.AddWindow(50, 0, 30, 21, "Off Pannel")
+	view1 := ui.AddWindow(0, 0, 10, 7, "On Pannel")
+	view2 := ui.AddWindow(0, 8, 10, 7, "Off Pannel")
 
 	// Creating main invis Parent Frame
-	frameMainOn := ui.CreateFrame(view1, 24, 15, ui.BorderNone, ui.Fixed)
+	frameMainOn := ui.CreateFrame(view1, 8, 5, ui.BorderNone, ui.Fixed)
 	frameMainOn.SetPack(ui.Horizontal)
-	frameMainOff := ui.CreateFrame(view2, 24, 15, ui.BorderNone, ui.Fixed)
+	frameMainOff := ui.CreateFrame(view2, 8, 5, ui.BorderNone, ui.Fixed)
 	frameMainOff.SetPack(ui.Horizontal)
 
 	// Creating child frame for LOX buttons
-	frameLOXOn := ui.CreateFrame(frameMainOn, 24, 15, ui.BorderThin, ui.Fixed)
-	frameLOXOn.SetPack(ui.Vertical)
+	frameLOXOn := ui.CreateFrame(frameMainOn, 8, 5, ui.BorderThin, ui.Fixed)
+	frameLOXOn.SetPack(ui.Horizontal)
 	frameLOXOn.SetTitle("LOX")
-	frameLOXOff := ui.CreateFrame(frameMainOff, 24, 15, ui.BorderThin, ui.Fixed)
-	frameLOXOff.SetPack(ui.Vertical)
+	frameLOXOff := ui.CreateFrame(frameMainOff, 8, 5, ui.BorderThin, ui.Fixed)
+	frameLOXOff.SetPack(ui.Horizontal)
 	frameLOXOff.SetTitle("LOX")
 
 	// Creating child frame for FUEL buttons
-	frameFUELOn := ui.CreateFrame(frameMainOn, 24, 15, ui.BorderThin, ui.Fixed)
-	frameFUELOn.SetPack(ui.Vertical)
+	frameFUELOn := ui.CreateFrame(frameMainOn, 8, 5, ui.BorderThin, ui.Fixed)
+	frameFUELOn.SetPack(ui.Horizontal)
 	frameFUELOn.SetTitle("FUEL")
-	frameFUELOff := ui.CreateFrame(frameMainOff, 24, 15, ui.BorderThin, ui.Fixed)
-	frameFUELOff.SetPack(ui.Vertical)
+	frameFUELOff := ui.CreateFrame(frameMainOff, 8, 5, ui.BorderThin, ui.Fixed)
+	frameFUELOff.SetPack(ui.Horizontal)
 	frameFUELOff.SetTitle("FUEL")
 
 	// Creating LOX buttons
